@@ -1,5 +1,5 @@
 public class climbingStairs {
-        public int climbStairs(int n) {
+        public static int climbStairs(int n) {
             // Handle the base cases
             if(n == 1 || n == 2){
                 return n;
@@ -26,5 +26,9 @@ public class climbingStairs {
             
             // Return the number of ways to reach the n-th step
             return dp[n];
+        }
+        public static void main(String[] args) {
+            int n = 5;
+            System.out.println(climbStairs(n));
         }
     }
