@@ -6,7 +6,7 @@ public class longestCommonSubstring {
         int dp[][] = new int[n+1][m+1];
         for (int i = 0; i < dp.length; i++) {
             for (int j = 0; j < dp[0].length; j++) {
-                if (n==0||m==0) {
+                if (i==0||j==0) {
                     dp[i][j] = 0;
                 }
             }
