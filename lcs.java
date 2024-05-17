@@ -3,6 +3,7 @@ public class lcs {
         int n = str1.length();
         int m = str2.length();
         int dp[][] = new int[n+1][m+1];
+        //initialization
         for (int i = 0; i < dp.length; i++) {
             dp[i][0] = 0;
         }
